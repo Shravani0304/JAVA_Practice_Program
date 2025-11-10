@@ -12,17 +12,24 @@ public class RecursionDemo {
 //        System.out.println("shravani");
 //        myName(++cnt);
 //    }
-    public static  void linearPrint(int num,int n){
-        if(n==num)
-            return;
+//    public static  void linearPrint(int num,int n){
+//        if(n==num)
+//            return;
+//        System.out.println(n);
+//        linearPrint(num,++n);
+//    }
+    public static void  reversePrint(int n){
+        if(n==0)return;
         System.out.println(n);
-        linearPrint(num,++n);
+        reversePrint(--n);
     }
+
 
 
     public static void main(String[] args) {
         //recursion(  1);
         //myName(1);
-        linearPrint(11,1);
+        //linearPrint(11,1);
+        reversePrint(10);
     }
 }
