@@ -11,7 +11,7 @@ public class StringPalindrome {
         if(isPAli(str,start,end))
             System.out.println(" palindrome");
         else
-            System.out.println("not plaindrome");
+            System.out.println("not plindrome");
     }
 
 }
